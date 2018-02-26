@@ -213,26 +213,8 @@ In case you experience any issues, please take a look at this section to check i
 :warning: If it happens that a specific command doesn't trigger any action (no response from the bot on button click), try to reload the keyboard with `/reload` or if that doesn't help, restart the bot with `/restart`.
 
 - __Error `Invalid nonce`__: It might happen that Kraken replies with this error. If you want to understand what a nonce is, read the [Wikipedia article](https://en.wikipedia.org/wiki/Cryptographic_nonce). This error happens mostly if you use different Telegram clients. Maybe you issued some commands on your laptop and then switched to your smartphone? That would be a typical scenario where this might happen. Or you didn't use the bot for a long time. To resolve it, just execute the command again. It should work the second time. Unfortunately there is not much i can do. The correct behavior would be to have one Kraken API key-pair for one device (one for your smartphone and one for your laptop). Unfortunately there is no way to identify the client. You can play around with the nonce value in your Kraken account (take a look at the [settings for the generated key-pair](#api-keys)). If you are really annoyed by this then here is what you could try: Create some key-pairs (5 might do it) and then, before you call the Kraken API, randomly choose one of the keys and use it till the next Kraken API call is made.
-- __Error `Service unavailable`__: If you get this error then because Kraken fucked up again. That happens regularly. It means that their API servers are not available or the performance is degraded because the load on the servers is too high. Nothing you can do here - try again later. If you want to have details on the API server performance, go to [Kraken Status](https://status.kraken.com) or execute the `/state` command.
+- __Error `Service unavailable`__: If you get this error then because Kraken is wrong again. That happens regularly. It means that their API servers are not available or the performance is degraded because the load on the servers is too high. Nothing you can do here - try again later. If you want to have details on the API server performance, go to [Kraken Status](https://status.kraken.com) or execute the `/state` command.
 
 ## Disclaimer
-I use this bot personally to trade on Kraken so i guess it's kind of stable but __if you use it, then you are doing this on your own responsibility__ !!! I can not be made responsible for lost coins or other stuff that might happen due to some fuckup within the code. Use at your own risk!
+I use this bot personally to trade on Kraken so i guess it's kind of stable but __if you use it, then you are doing this on your own responsibility__ !!! I can not be made responsible for lost coins or other stuff that might happen due to some wrong within the code. Use at your own risk!
 
-## Donating
-If you find __Telegram-Kraken-Bot__ suitable for your needs or maybe even made some money because of it, please consider donating whatever amount you like to:
-
-#### Monero (XMR)
-```
-46tUdg4LnqSKroZBR1hnQ2K6NnmPyrYjC8UBLhHiKYufCipQUaACfxcBeQUmYGFvqCdU3ghCpYq2o5Aqyj1nH6mfLVNka26
-```
-
-#### Ethereum (ETH)
-```
-0xccb2fa97f47f0d58558d878f359013fef4097937
-```
-
-#### How else can you support me?
-If you can't or don't want to donate, please consider signing up on listed exchanges below. They are really good and by using these links to register an account i get a share of the trading-fee that you pay to the exchange if you execute a trade.
-
-- [Binance](https://www.binance.com/?ref=16770868)
-- [Qryptos](https://accounts.qryptos.com/sign-up?affiliate=wVZoZ4uG269520)
